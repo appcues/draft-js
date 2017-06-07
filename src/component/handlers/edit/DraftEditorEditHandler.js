@@ -38,6 +38,8 @@ const DraftEditorEditHandler = {
   onKeyDown,
   onPaste,
   onSelect,
+  onKeyUp: onSelect,
+  onMouseUp: onSelect
 };
 
 module.exports = DraftEditorEditHandler;
