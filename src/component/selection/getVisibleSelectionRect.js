@@ -23,7 +23,7 @@ import type {FakeClientRect} from 'getRangeBoundingClientRect';
  * temporarily invalid, return null.
  */
 function getVisibleSelectionRect(global: any): ?FakeClientRect {
-  const selection = global.getSelection();
+  const selection = global.editorShadowRoot.getSelection();
   if (!selection.rangeCount) {
     return null;
   }

@@ -30,7 +30,7 @@ function keyCommandBackspaceToStartOfLine(
         return moveSelectionBackward(strategyState, 1);
       }
 
-      var domSelection = global.getSelection();
+      var domSelection = global.editorShadowRoot.getSelection();
       var range = domSelection.getRangeAt(0);
       range = expandRangeToStartOfLine(range);
 

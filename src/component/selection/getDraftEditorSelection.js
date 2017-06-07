@@ -26,7 +26,7 @@ function getDraftEditorSelection(
   editorState: EditorState,
   root: HTMLElement,
 ): DOMDerivedSelection {
-  var selection = global.getSelection();
+  var selection = global.editorShadowRoot.getSelection();
 
   // No active selection.
   if (selection.rangeCount === 0) {
