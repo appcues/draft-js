@@ -31,7 +31,7 @@ const EditorState = require('./EditorState');
 const React = require('react');
 const ReactDOM = require('react-dom');
 const Scroll = require('fbjs/lib/Scroll');
-const Style = require('fbjs/lib/Style');
+const Style = require('./StyleOverride');
 const UserAgent = require('fbjs/lib/UserAgent');
 
 const cx = require('fbjs/lib/cx');

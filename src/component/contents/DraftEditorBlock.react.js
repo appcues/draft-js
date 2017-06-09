@@ -26,7 +26,7 @@ const React = require('React');
 const ReactDOM = require('ReactDOM');
 const Scroll = require('Scroll');
 
-const Style = require('Style');
+const Style = require('StyleOverride');
 const UnicodeBidi = require('UnicodeBidi');
 const UnicodeBidiDirection = require('UnicodeBidiDirection');
 
