@@ -21,7 +21,7 @@ var getStyleProperty = require('getStyleProperty');
  * @return {boolean} True if the supplied ndoe is scrollable.
  */
 function _isNodeScrollable(element, name) {
-  var overflow = Style.get(element, name);
+  var overflow = StyleOverride.get(element, name);
   return overflow === 'auto' || overflow === 'scroll';
 }
 
